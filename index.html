@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushobhit Chattaraj - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+
+            <div class="theme-switcher">
+                <label for="theme-toggle" class="switch-label">
+                    <input type="checkbox" id="theme-toggle" class="switch-checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" aria-label="Intro">
+        <div class="hero-media" role="img" aria-label="Decorative hero background"></div>
+        <div class="container hero-content">
+            <h1>Sushobhit Chattaraj</h1>
+            <p class="hero-subtitle">
+                <span class="typewriter" data-text="AI/ML Engineer & Generative AI Enthusiast"></span>
+            </p>
+            <p>
+        </div>
+    </section>
+
+    <section id="about" class="reveal-up">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="images/me.jpg" alt="Photo of Sushobhit Chattaraj" />
+            </div>
+
+            <div class="about-text">
+                <h1>About</h1>
+                <p>AI/ML Engineer & Generative AI enthusiast focused on building intelligent, human-centered systems.
+                </p>
+
+                <!-- Tabs -->
+                <div class="about-tabs" role="tablist" aria-label="About Sections">
+                    <button class="tab" role="tab" aria-selected="true" aria-controls="panel-skills"
+                        id="tab-skills">Skills</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-experience"
+                        id="tab-experience" tabindex="-1">Experience</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education"
+                        id="tab-education" tabindex="-1">Education</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-achievements"
+                        id="tab-achievements" tabindex="-1">Achievements</button>
+                </div>
+
+                <!-- Panels -->
+                <div class="about-tabpanels reveal-group" data-stagger="120">
+                    <!-- Skills (default visible) -->
+                    <div id="panel-skills" class="tabpanel is-active" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-skills">
+                        <ul class="skills-list">
+                            <li><strong>Languages:</strong> C++, Python</li>
+                            <li><strong>Libraries/Frameworks:</strong> NumPy, Pandas, scikit-learn, PyTorch, Matplotlib
+                            </li>
+                            <li><strong>GenAI:</strong> Prompting, Embeddings, RAG, Moderation pipelines</li>
+                            <li><strong>Web:</strong> HTML, CSS, JavaScript; Flask/FastAPI (basics)</li>
+                            <li><strong>Tools:</strong> Git, VS Code, Anaconda</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div id="panel-experience" class="tabpanel" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-experience">
+                        <div class="panel">
+                            <h3>Indian Army — CCOSW (Currently)</h3>
+                            <p>Python Developer & Data Analyst; contributing to multiple internal workflows and
+                                analytics tasks.</p>
+                        </div>
+                        <div class="panel">
+                            <h3>IEDC — Research Intern (Mar 2024 – Aug 2024)</h3>
+                            <ul>
+                                <li>Worked on NLP projects, including sentiment analysis on Twitter data.</li>
+                                <li>Authored a journal paper (under review).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div id="panel-education" class="tabpanel" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-education">
+                        <div class="table-wrap">
+                            <table class="about-table">
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>College/University</th>
+                                        <th>Year</th>
+                                        <th>Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B.Tech Computer Science</td>
+                                        <td>Institute of Engineering and Management, Kolkata</td>
+                                        <td>2022–Present</td>
+                                        <td>9.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intermediate / +2</td>
+                                        <td>D.A.V Public School, Delhi</td>
+                                        <td>2021</td>
+                                        <td>81.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>High School</td>
+                                        <td>D.A.V Public School, Delhi</td>
+                                        <td>2019</td>
+                                        <td>88%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div id="panel-achievements" class="tabpanel" role="tabpanel" tabindex="0"
+                        aria-labelledby="tab-achievements">
+                        <ul class="skills-list">
+                            <li>Qualified GATE 2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="reveal-up">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="projects-container">
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="reveal-up">
+        <div class="container contact-grid">
+            <!-- LEFT: info -->
+            <div class="contact-info">
+                <h2 class="contact-title">Contact</h2>
+
+                <a class="contact-row" href="mailto:csushobhit5515@gmail.com">
+                    <span class="icon">
+                        <!-- mail icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                            <path d="M3 7l9 6 9-6"></path>
+                        </svg>
+                    </span>
+                    <span>csushobhit5515@gmail.com</span>
+                </a>
+
+                <a class="contact-row" href="tel:+919650968709">
+                    <span class="icon">
+                        <!-- phone icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.1a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span>(+91) 96509 68709</span>
+                </a>
+
+                <!-- Optional socials: replace # with your links -->
+                <div class="socials">
+                    <a class="social-btn" href="https://www.linkedin.com/in/sushobhit-chattaraj-410b2a253/" aria-label="LinkedIn">in</a>
+                    <a class="social-btn" href="https://github.com/Csushobhit" aria-label="GitHub">gh</a>
+                    <a class="social-btn" href="https://www.instagram.com/sushobhitchattaraj/" aria-label="Instagram">ig</a>
+                    <a class="social-btn" href="https://x.com/csushobhit" aria-label="Twitter / X">x</a>
+                </div>
+
+                <a class="btn btn-primary resume-btn" href="../Sushobhit_Chattaraj_CV.pdf" target="_blank"
+                    rel="noopener">
+                    Resume
+                </a>
+            </div>
+
+            <!-- RIGHT: form -->
+            <div class="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/mnnbygvd" method="post" novalidate>
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <textarea name="message" placeholder="Message" rows="8" required></textarea>
+                    </div>
+                    <div class="actions">
+                        <button type=submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sushobhit Chattaraj. All Rights Reserved.</p>
+            <ul>
+                <li><a href="https://github.com/Csushobhit" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sushobhit-chattaraj-410b2a253/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://x.com/csushobhit" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
